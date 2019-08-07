@@ -1,17 +1,34 @@
 
-# Created by https://www.gitignore.io/api/python,windows,visualstudiocode,jupyternotebooks
-# Edit at https://www.gitignore.io/?templates=python,windows,visualstudiocode,jupyternotebooks
+# Created by https://www.gitignore.io/api/macos,python,windows,sublimetext,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=macos,python,windows,sublimetext,visualstudiocode
 
-### JupyterNotebooks ###
-# gitignore template for Jupyter Notebooks
-# website: http://jupyter.org/
+### macOS ###
+# General
+.DS_Store
+.AppleDouble
+.LSOverride
 
-.ipynb_checkpoints
-*/.ipynb_checkpoints/*
+# Icon must end with two \r
+Icon
 
-# Remove previous ipynb_checkpoints
-#   git rm -r .ipynb_checkpoints/
-#
+# Thumbnails
+._*
+
+# Files that might appear in the root of a volume
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+
+# Directories potentially created on remote AFP share
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
@@ -90,6 +107,7 @@ docs/_build/
 target/
 
 # Jupyter Notebook
+.ipynb_checkpoints
 
 # IPython
 profile_default/
@@ -138,6 +156,38 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
+### SublimeText ###
+# Cache files for Sublime Text
+*.tmlanguage.cache
+*.tmPreferences.cache
+*.stTheme.cache
+
+# Workspace files are user-specific
+*.sublime-workspace
+
+# Project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using Sublime Text
+# *.sublime-project
+
+# SFTP configuration file
+sftp-config.json
+
+# Package control specific files
+Package Control.last-run
+Package Control.ca-list
+Package Control.ca-bundle
+Package Control.system-ca-bundle
+Package Control.cache/
+Package Control.ca-certs/
+Package Control.merged-ca-bundle
+Package Control.user-ca-bundle
+oscrypto-ca-bundle.crt
+bh_unicode_properties.cache
+
+# Sublime-github package stores a github token in this file
+# https://packagecontrol.io/packages/sublime-github
+GitHub.sublime-settings
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -175,4 +225,4 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
-# End of https://www.gitignore.io/api/python,windows,visualstudiocode,jupyternotebooks
+# End of https://www.gitignore.io/api/macos,python,windows,sublimetext,visualstudiocode

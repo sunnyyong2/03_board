@@ -11,22 +11,22 @@
   </thead>
   <tbody>
     {% for todo in todos %}
-    <tr>
-      <th scope="row">{{todo.id}}</th>
-      <td>{{todo.title}}</td>
-      <td>{{todo.due_date}}</td>
-      <td>
-        <a href="/todos/{{todo.id}}/" class="btn btn-primary">글보기</a>
-      </td>
-    </tr>
+      <tr>
+        <th scope="row">{{todo.id}}</th>
+        <td>{{todo.title}}</td>
+        <td>{{todo.due_date}}</td>
+        <td>
+          <a href="/todos/{{todo.id}}/" class="btn btn-primary">글보기</a>
+        </td>
+      </tr>
     {% empty %}
       <tr>
         <th>#</th>
-        <td>할 일이 업써</td>
+        <td>할일이 비었습니다</td>
         <td>-</td>
         <td>-</td>
       </tr>
-    {%  endfor %}
+    {% endfor %}
   </tbody>
 </table>
 {% endblock %}
