@@ -8,4 +8,9 @@ urlpatterns = [
     #Read
     path('',views.index),
     path('<int:todo_id>/',views.detail),
+    #update
+    path('<int:todo_id>/edit/',views.edit),
+    path('<int:todo_id>/update/',views.update),    
+    #delete
+    path('<int:todo_id>/delete/',views.delete),
 ]
