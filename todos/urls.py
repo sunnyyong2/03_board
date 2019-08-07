@@ -6,5 +6,6 @@ urlpatterns = [
     path('new/',views.new),
     path('create/',views.create),
     #Read
-    path('',views.index)
+    path('',views.index),
+    path('<int:todo_id>/',views.detail),
 ]
